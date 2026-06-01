@@ -285,7 +285,10 @@ for maximum throughput.
 
 ## 🙏 Credits & Acknowledgements
 
+Inspired by Angelina Reader.
+
 Special thanks to **DotNeuralNet** for providing the foundational Braille dataset and baseline YOLO weights that helped bootstrap the computer vision pipeline.
+ALL INFORMATION ABOUT MODEL TRAINING, ACCURACY AND DATASET USED CAN BE FOUND AT **https://github.com/snoop2head/DotNeuralNet**.
 
 ---
 
