@@ -114,15 +114,87 @@ BrailleVision was designed with visually impaired users as the primary audience.
 
 ---
 
-## 🚀 Running Locally
+## 🚀 How to Run Locally
 
-Because all processing is performed locally for privacy, you'll need a machine capable of running an 8B parameter language model.
+Because all processing is performed locally for privacy (**no cloud APIs**), you will need a machine capable of running an 8B parameter language model.
 
-### 1. Clone the Repository
+Choose your operating system below for specific setup instructions.
+
+---
+
+## 🪟 Windows Setup Guide
+
+### 1. Clone the Repository & Set Up Environment
+
+Open **Command Prompt (cmd)** and run:
+
+```cmd
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+```
+
+It is highly recommended to use a virtual environment on Windows:
+
+```cmd
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 2. Install Dependencies
+
+```cmd
+pip install flask opencv-python numpy ultralytics requests
+```
+
+### 3. Install & Start Ollama (The AI Brain)
+
+1. Download and run the Windows installer from:  
+   https://ollama.com/download
+
+2. Once installed, open a new Command Prompt window and run:
+
+```cmd
+ollama run llama3
+```
+
+> Leave this terminal window open. It acts as the local API server on port **11434**.
+
+### 4. Start the Vision Server
+
+Go back to your first Command Prompt window (where your virtual environment is active) and run:
+
+```cmd
+python app.py
+```
+
+### 5. Launch the Application
+
+Open your web browser and navigate to:
+
+```text
+http://localhost:5000
+```
+
+Grant camera permissions when prompted and begin scanning.
+
+---
+
+## 🐧 Linux (Ubuntu) Setup Guide
+
+### 1. Clone the Repository & Set Up Environment
+
+Open a terminal and run:
 
 ```bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
+```
+
+Optional but recommended:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 ### 2. Install Dependencies
@@ -131,39 +203,39 @@ cd <your-repo-name>
 pip install flask opencv-python numpy ultralytics requests
 ```
 
-### 3. Install & Start Ollama
+### 3. Install & Start Ollama (The AI Brain)
 
-Run:
+Install Ollama using the official installation script:
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Once installed, start the Llama 3 model:
 
 ```bash
 ollama run llama3
 ```
 
-Leave this terminal window open.
-
-Ollama will expose a local API endpoint on:
-
-```text
-http://localhost:11434
-```
+> Leave this terminal window open. It acts as the local API server on port **11434**.
 
 ### 4. Start the Vision Server
 
-Open a second terminal:
+Open a new terminal window, navigate to the project directory, and run:
 
 ```bash
-python app.py
+python3 app.py
 ```
 
 ### 5. Launch the Application
 
-Open:
+Open your web browser and navigate to:
 
 ```text
 http://localhost:5000
 ```
 
-Grant camera permissions and begin scanning Braille documents.
+Grant camera permissions when prompted and begin scanning.
 
 ---
 
