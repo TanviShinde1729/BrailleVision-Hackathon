@@ -9,14 +9,6 @@ A full-stack, edge-AI web application that translates physical Braille documents
 
 ---
 
-## 📸 Screenshots
-
-| Live Camera Tracking | Translation Dashboard |
-|----------------------|----------------------|
-| *Insert image showing the green bounding box on the camera feed* | *Insert image showing the YOLO vs Llama split-screen output* |
-
----
-
 ## 🧠 How It Works
 
 Translating physical Braille dots using a standard 2D webcam is challenging because of uneven lighting and microscopic shadows. BrailleVision addresses this through a three-stage processing pipeline.
