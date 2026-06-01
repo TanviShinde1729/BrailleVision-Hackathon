@@ -2,11 +2,6 @@
 
 A full-stack, edge-AI web application that translates physical Braille documents into English in real-time. It utilizes a custom **OpenCV + YOLOv8 + Llama 3** pipeline to handle spatial tracking, dot recognition, and autonomous NLP error correction for OCR stuttering.
 
-## 🔗 Links
-
-- **Live Demo Video:** [Insert YouTube/Vimeo Link Here]
-- **Working Web App:** [Insert Deployment/Ngrok Link Here]
-
 ---
 
 ## 🧠 How It Works
@@ -121,8 +116,8 @@ Choose your operating system below for specific setup instructions.
 Open **Command Prompt (cmd)** and run:
 
 ```cmd
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/TanviShinde1729/BrailleVision-Hackathon.git
+cd BrailleVision-Hackathon
 ```
 
 It is highly recommended to use a virtual environment on Windows:
@@ -178,8 +173,8 @@ Grant camera permissions when prompted and begin scanning.
 Open a terminal and run:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/TanviShinde1729/BrailleVision-Hackathon.git
+cd BrailleVision-Hackathon
 ```
 
 Optional but recommended:
@@ -261,15 +256,11 @@ The custom gamma correction pipeline substantially improves robustness under une
 
 ## 🔮 Future Improvements
 
-### ⚡ Faster NLP Pipeline
+### Voice-over is cluttered, needs improvement.
 
-Replace the current Llama 3 8B model with:
+### This is a submission intended to run locally. Has not been deployed.
 
-- Phi-3
-- Gemma
-- Cloud-hosted inference APIs
-
-to reduce latency and hardware requirements.
+### Because of how heavy Ollama + YOLO pipeline is, it is fairly slow now, and would benefit a lot from a cloud-based gpu-accelerated server.
 
 ### 📚 Improved Dataset
 
